@@ -180,15 +180,7 @@ const Surah = (props) => {
     return transcriptions[locale];
   });
 
-  const computedGAId = useMemo(() => {
-    let tagId;
-    if (locale === "en") {
-      tagId = "G-DMP183WFD2";
-    } else {
-      tagId = "G-TPHFNXZZ4C"; // it should be in env
-    }
-    return tagId;
-  }, [router]);
+  const analyticsId = process.env.NEXT_PUBLIC_ANALYTICS_ID;
 
   return (
     <SC>
@@ -260,9 +252,9 @@ const Surah = (props) => {
           type="gtag"
           script={{
             vars: {
-              gtag_id: computedGAId,
+              gtag_id: analyticsId,
               config: {
-                [computedGAId]: { groups: "default" },
+                [analyticsId]: { groups: "default" },
               },
             },
             triggers: {
