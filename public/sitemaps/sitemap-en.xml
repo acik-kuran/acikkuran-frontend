@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://en.acikkuran.com/sitemap-en-0.xml</loc></sitemap>
-<sitemap><loc>https://en.acikkuran.com/sitemap-en-1.xml</loc></sitemap>
-<sitemap><loc>https://en.acikkuran.com/sitemap-en-2.xml</loc></sitemap>
-<sitemap><loc>https://en.acikkuran.com/sitemap-en-3.xml</loc></sitemap>
-<sitemap><loc>https://en.acikkuran.com/sitemap-en-4.xml</loc></sitemap>
-<sitemap><loc>https://en.acikkuran.com/sitemap-en-5.xml</loc></sitemap>
-<sitemap><loc>https://en.acikkuran.com/sitemap-en-6.xml</loc></sitemap>
+    <sitemap>
+        <loc>https://quran.so/sitemap-en-0.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://quran.so/sitemap-en-1.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://quran.so/sitemap-en-2.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://quran.so/sitemap-en-3.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://quran.so/sitemap-en-4.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://quran.so/sitemap-en-5.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://quran.so/sitemap-en-6.xml</loc>
+    </sitemap>
 </sitemapindex>

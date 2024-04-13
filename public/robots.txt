@@ -2,6 +2,3 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://en.acikkuran.com/sitemap-en.xml
-Sitemap: https://acikkuran.com/sitemap.xml
