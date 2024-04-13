@@ -32,7 +32,7 @@ const awesomegrid = {
     lg: 90, // max-width: 1440px
     xl: 90, // max-width: 1440px
   },
-  bp: {
+  breakpoints: {
     xs: 20, // 320px
     xsm: 26, // 416px
     sm: 48, // 768px

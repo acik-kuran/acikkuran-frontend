@@ -32,7 +32,9 @@ const Navbar = (props) => {
   const { hideSearchButton, hideBottom, children, isAmp } = props;
   const { t } = useTranslation();
   const locale = process.env.NEXT_PUBLIC_LOCALE;
-  const [navWidth, setNavWidth] = useState(theme.awesomegrid.bp.lg * 16);
+  const [navWidth, setNavWidth] = useState(
+    theme.awesomegrid.breakpoints.lg * 16
+  );
   const [showSearch, setShowSearch] = useState(false);
   useEffect(() => {
     setNavWidth(window.innerWidth);
@@ -61,7 +63,7 @@ const Navbar = (props) => {
             {children[0]}
             {!isAmp &&
               !hideSearchButton &&
-              navWidth <= theme.awesomegrid.bp.sm * 16 && (
+              navWidth <= theme.awesomegrid.breakpoints.sm * 16 && (
                 <NavSearch>
                   <Button
                     type="text"
@@ -75,7 +77,7 @@ const Navbar = (props) => {
               )}
           </NavLeft>
 
-          {navWidth >= theme.awesomegrid.bp.sm * 16 && (
+          {navWidth >= theme.awesomegrid.breakpoints.sm * 16 && (
             <React.Fragment>
               {!isAmp && (
                 <NavCenter height={ComputedLogoHeight}>
@@ -89,7 +91,7 @@ const Navbar = (props) => {
                 <NavRight>
                   {!hideSearchButton && (
                     <React.Fragment>
-                      {navWidth <= theme.awesomegrid.bp.md * 16 ? (
+                      {navWidth <= theme.awesomegrid.breakpoints.md * 16 ? (
                         <>
                           {!isAmp && (
                             <NavSearch>
@@ -151,7 +153,7 @@ const Navbar = (props) => {
           )}
         </NavContainer>
       </Nav>
-      {!hideBottom && navWidth <= theme.awesomegrid.bp.sm * 16 && (
+      {!hideBottom && navWidth <= theme.awesomegrid.breakpoints.sm * 16 && (
         <React.Fragment>
           <Bottom>
             <BottomContainer>
@@ -173,7 +175,7 @@ const Navbar = (props) => {
       )}
       {!hideSearchButton &&
         showSearch &&
-        navWidth <= theme.awesomegrid.bp.sm * 16 && (
+        navWidth <= theme.awesomegrid.breakpoints.sm * 16 && (
           <MobileSearch setShowSearch={setShowSearch}></MobileSearch>
         )}
     </React.Fragment>

@@ -130,7 +130,7 @@ const desktopSearch = (props) => {
 
   useEffect(() => {
     if (navWidth) {
-      navWidth >= theme.awesomegrid.bp.sm * 16 &&
+      navWidth >= theme.awesomegrid.breakpoints.sm * 16 &&
         hideCloseButton &&
         quickSearchResult.length === 0 &&
         getRandom();
@@ -138,7 +138,7 @@ const desktopSearch = (props) => {
   }, [navWidth]);
 
   useEffect(() => {
-    navWidth >= theme.awesomegrid.bp.sm * 16 &&
+    navWidth >= theme.awesomegrid.breakpoints.sm * 16 &&
       hideCloseButton &&
       quickSearchResult.length > 0 &&
       getRandom();
@@ -172,7 +172,8 @@ const desktopSearch = (props) => {
   useEffect(() => {
     setNavWidth(window.innerWidth);
     setSelection(
-      window.innerWidth >= theme.awesomegrid.bp.sm * 16 && hideCloseButton
+      window.innerWidth >= theme.awesomegrid.breakpoints.sm * 16 &&
+        hideCloseButton
         ? null // 'surah'
         : null
     );
@@ -185,7 +186,8 @@ const desktopSearch = (props) => {
     const handleResize = () => {
       setNavWidth(window.innerWidth);
       setSelection(
-        window.innerWidth >= theme.awesomegrid.bp.sm * 16 && hideCloseButton
+        window.innerWidth >= theme.awesomegrid.breakpoints.sm * 16 &&
+          hideCloseButton
           ? null // 'surah'
           : null
       );
@@ -236,7 +238,8 @@ const desktopSearch = (props) => {
             placeholder={t("search_placeholder")}
             ref={inputEl}
             onClick={() => {
-              navWidth < theme.awesomegrid.bp.sm * 16 && setShowMobile(true);
+              navWidth < theme.awesomegrid.breakpoints.sm * 16 &&
+                setShowMobile(true);
             }}
             onChange={(e) => setSearchParam(e.target.value)}
             onKeyPress={(e) => onKeyPress(e)}

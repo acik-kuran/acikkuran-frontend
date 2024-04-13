@@ -149,7 +149,9 @@ const Verse = (props) => {
     authorSelections || defaultAuthorSelections[locale]
   );
 
-  const [navWidth, setNavWidth] = useState(theme.awesomegrid.bp.lg * 16);
+  const [navWidth, setNavWidth] = useState(
+    theme.awesomegrid.breakpoints.lg * 16
+  );
 
   useEffect(() => {
     setNavWidth(window.innerWidth);
@@ -861,7 +863,9 @@ const Verse = (props) => {
           </Container>
         </VerseDetail>
       </Content>
-      {!isAmp && navWidth >= theme.awesomegrid.bp.sm * 16 && <Footer />}
+      {!isAmp && navWidth >= theme.awesomegrid.breakpoints.sm * 16 && (
+        <Footer />
+      )}
     </SC>
   );
 };

@@ -115,7 +115,9 @@ const Surah = (props) => {
   const { audioSurah, storeAudioSurah } = useContext(PlayerContext);
   const [url, setUrl] = useState();
   const [userSettings, setUserSettings] = useState(settings);
-  const [navWidth, setNavWidth] = useState(theme.awesomegrid.bp.lg * 16);
+  const [navWidth, setNavWidth] = useState(
+    theme.awesomegrid.breakpoints.lg * 16
+  );
   const getVerseOptions = verseOptions(surah.verse_count);
 
   useEffect(() => {
@@ -653,7 +655,9 @@ const Surah = (props) => {
           </Container>
         </SurahDetail>
       </Content>
-      {!isAmp && navWidth >= theme.awesomegrid.bp.sm * 16 && <Footer />}
+      {!isAmp && navWidth >= theme.awesomegrid.breakpoints.sm * 16 && (
+        <Footer />
+      )}
     </SC>
   );
 };

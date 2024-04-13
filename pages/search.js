@@ -121,7 +121,9 @@ const Search = (props) => {
     setTranslationsList(translations);
   }, [translations]);
 
-  const [navWidth, setNavWidth] = useState(theme.awesomegrid.bp.lg * 16);
+  const [navWidth, setNavWidth] = useState(
+    theme.awesomegrid.breakpoints.lg * 16
+  );
 
   useEffect(() => {
     setNavWidth(window.innerWidth);
@@ -316,7 +318,9 @@ const Search = (props) => {
                       </InfiniteScroll>
                     </TabPanel>
                   </Tabs>
-                  {navWidth >= theme.awesomegrid.bp.sm * 16 && <Footer home />}
+                  {navWidth >= theme.awesomegrid.breakpoints.sm * 16 && (
+                    <Footer home />
+                  )}
                 </Col>
               </Row>
             )}

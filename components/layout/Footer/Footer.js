@@ -32,7 +32,7 @@ const Footer = (props) => {
 
   const computedFavicon = useMemo(() => {
     const computedTheme =
-      home & (viewportWidth <= themeVars.awesomegrid.bp.sm * 16)
+      home & (viewportWidth <= themeVars.awesomegrid.breakpoints.sm * 16)
         ? "dark"
         : theme;
     return `/locales/${locale}/images/manifest/favicon-${computedTheme}.png`;

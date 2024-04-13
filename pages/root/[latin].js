@@ -84,7 +84,9 @@ const Root = (props) => {
   const [rootChar, setRootChar] = useState(root.rootchar_id);
   const [loading, setLoading] = useState(true);
 
-  const [navWidth, setNavWidth] = useState(theme.awesomegrid.bp.lg * 16);
+  const [navWidth, setNavWidth] = useState(
+    theme.awesomegrid.breakpoints.lg * 16
+  );
 
   const toggleVerse = (id) => {
     if (!showVerses.find((i) => i === id)) {
@@ -451,7 +453,7 @@ const Root = (props) => {
           </Container>
         </RootDetail>
       </Content>
-      {navWidth >= theme.awesomegrid.bp.sm * 16 && <Footer />}
+      {navWidth >= theme.awesomegrid.breakpoints.sm * 16 && <Footer />}
     </SC>
   );
 };
