@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@recoil/*": ["recoil/*"],
+      "@lib/*": ["lib/*"],
+      "@data/*": ["data/*"],
+      "@assets/*": ["assets/*"],
+      "@api/*": ["pages/api/*"],
+      "@auth/*": ["pages/api/auth/*"]
+    }
+  },
+  "exclude": ["node_modules", "out"]
+}

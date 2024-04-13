@@ -1,0 +1,12 @@
+{
+	"private": true,
+	"name": "javascript-time-ago/locale/tr",
+	"main": "../tr.json",
+	"type": "module",
+	"exports": {
+		".": {
+			"require": "../tr.json"
+		}
+	},
+	"sideEffects": false
+}

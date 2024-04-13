@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/collect-day-scores",
+      "schedule": "4 21 * * *"
+    }
+  ]
+}
