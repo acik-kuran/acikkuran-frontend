@@ -78,8 +78,8 @@ export default async (req, res) => {
       .then(async (data) => {
         if (data?.insert_users_auth_requests_one?.email) {
           await mg.messages
-            .create("selam.acikkuran.com", {
-              from: `${emailParams.from} <selam@acikkuran.com>`,
+            .create(process.env.MAILGUN_DOMAIN, {
+              from: `${emailParams.from} <${process.env.MAILGUN_SENDER_EMAIL}>`,
               to: [email],
               subject: emailParams.subject,
               template: "create password with params",
