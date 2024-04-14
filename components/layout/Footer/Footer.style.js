@@ -25,7 +25,7 @@ const SC = styled.footer`
 
 const FooterWrapper = styled.div`
   ${({ theme }) => css`
-    border-top: 1px solid ${theme.secondaryBeyaz};
+    border-top: 1px solid ${theme.secondaryColor};
     padding: 24px 0;
     width: 100%;
     display: flex;

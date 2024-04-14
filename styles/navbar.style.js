@@ -5,7 +5,7 @@ const NavSearch = styled.div``;
 const NavHome = styled.div``;
 const Nav = styled.nav`
   ${({ theme }) => css`
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
     position: fixed;
     @media print {
       position: relative;
@@ -85,12 +85,13 @@ const NavLeft = styled.div`
         border-radius: 50%;
         @media (hover: hover) {
           :hover {
-            background: ${theme.secondaryBeyaz};
+            background: ${theme.secondaryColor};
           }
         }
         svg {
           width: 18px;
           height: 18px;
+          color: ${theme.neutralDark};
         }
       }
     }
@@ -118,21 +119,21 @@ const NavLeft = styled.div`
         svg {
           width: 18px;
           height: 18px;
-          color: ${theme.ortancaSiyah};
+          color: ${theme.neutralDark};
         }
         @media only screen and (max-width: ${theme.sizes.md}) {
           margin-right: 1px;
         }
         @media (hover: hover) {
           :hover {
-            background: ${theme.secondaryBeyaz};
+            background: ${theme.secondaryColor};
           }
         }
       }
     }
     h1 {
       font-size: 1.15em;
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       font-weight: 600;
       line-height: 0;
       text-wrap: nowrap;
@@ -185,7 +186,7 @@ const NavCenter = styled.div`
       margin-top: 4px;
       height: ${props.height};
       path {
-        fill: ${props.theme.enEnSiyah};
+        fill: ${props.theme.zebra};
       }
       opacity: 0.7;
       &:hover {
@@ -228,8 +229,8 @@ const NavRight = styled.div`
         text-align: center;
         white-space: nowrap;
         background-color: ${theme.bodyBackground};
-        border: 1px solid ${theme.secondaryBeyaz};
-        color: ${theme.enSiyah};
+        border: 1px solid ${theme.secondaryColor};
+        color: ${theme.primaryDark};
         cursor: pointer;
         justify-content: center;
         align-items: center;
@@ -242,7 +243,7 @@ const NavRight = styled.div`
         }
         &:hover {
           border-color: ${theme.borderHover};
-          color: ${theme.enSiyah};
+          color: ${theme.primaryDark};
         }
         .icon {
           margin-left: calc(-0.375em - 1px);
@@ -260,7 +261,7 @@ const NavRight = styled.div`
 
 const Bottom = styled.nav`
   ${({ theme }) => css`
-    border-top: 1px solid ${theme.secondaryBeyaz};
+    border-top: 1px solid ${theme.secondaryColor};
     position: fixed;
     bottom: 0;
     left: 0;
@@ -297,8 +298,8 @@ const BottomContainer = styled(Container)`
         text-align: center;
         white-space: nowrap;
         background-color: ${theme.bodyBackground};
-        border: 1px solid ${theme.secondaryBeyaz};
-        color: ${theme.enSiyah};
+        border: 1px solid ${theme.secondaryColor};
+        color: ${theme.primaryDark};
         cursor: pointer;
         justify-content: center;
         align-items: center;
@@ -311,11 +312,11 @@ const BottomContainer = styled(Container)`
         }
         &:hover {
           border-color: ${theme.borderHover};
-          color: ${theme.enSiyah};
+          color: ${theme.primaryDark};
         }
         @media only screen and (max-width: ${theme.sizes.sm}) {
           &:hover {
-            border-color: ${theme.secondaryBeyaz};
+            border-color: ${theme.secondaryColor};
           }
         }
         .icon {

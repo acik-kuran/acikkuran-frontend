@@ -676,12 +676,9 @@ export async function getServerSideProps(ctx) {
     };
   }
 
-  const { data } =
-    surah_id !== "favicon.ico"
-      ? await fetchJson(
-          `${process.env.NEXT_PUBLIC_API_URL}/surah/${surah_id}?author=${authorId}`
-        )
-      : {};
+  const { data } = await fetchJson(
+    `${process.env.NEXT_PUBLIC_API_URL}/surah/${surah_id}?author=${authorId}`
+  );
 
   if (data) {
     return {

@@ -54,7 +54,7 @@ const AuthorSelectionLoginRequired = styled.div`
     text-align: center;
     margin: 0 auto;
     svg {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
     }
     h2 {
       font-size: 1.5em;
@@ -62,7 +62,7 @@ const AuthorSelectionLoginRequired = styled.div`
       font-weight: bold;
     }
     p {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       font-size: 1em;
       margin-top: 24px;
     }
@@ -117,7 +117,7 @@ const AuthorSelectionItem = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
     border-radius: 8px;
 
     .nav__locale-button {
@@ -126,7 +126,7 @@ const AuthorSelectionItem = styled.div`
 
     width: 100%;
     &:hover {
-      background: ${theme.beyazHover};
+      background: ${theme.smokeBackground};
       ${AuthorSelectionActionButton} {
         display: flex;
       }

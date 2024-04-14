@@ -26,11 +26,11 @@ const SurahTransliteration = styled.div``;
 const SurahHero = styled.section`
   ${({ theme }) => css`
     text-align: center;
-    background-color: ${theme.beyazHover};
+    background-color: ${theme.smokeBackground};
     margin-bottom: 20px;
     padding: 24px;
     border-radius: 8px;
-    border: 1px solid ${theme.beyazHover};
+    border: 1px solid ${theme.smokeBackground};
 
     @media only screen and (max-width: ${theme.sizes.sm}) {
       margin-top: 16px;
@@ -93,7 +93,7 @@ const SurahDetail = styled.section`
     ${TabList} {
       @media only screen and (max-width: ${theme.sizes.sm}) {
         border: 0;
-        border-bottom: 1px solid ${theme.secondaryBeyaz};
+        border-bottom: 1px solid ${theme.secondaryColor};
         padding: 10px 0;
         span {
           display: none;
@@ -119,12 +119,12 @@ const SurahDetail = styled.section`
           border-radius: 50%;
 
           :hover {
-            background: ${theme.secondaryBeyaz};
+            background: ${theme.secondaryColor};
           }
           svg {
             width: 18px;
             height: 18px;
-            color: ${theme.ortancaSiyah};
+            color: ${theme.neutralDark};
           }
         }
 
@@ -142,19 +142,19 @@ const SurahDetail = styled.section`
 const SurahAuthor = styled.div`
   ${({ theme }) => css`
     padding: 10px 20px;
-    background: ${theme.secondaryBeyaz};
+    background: ${theme.secondaryColor};
   `}
 `;
 
 const SurahVerse = styled.div`
   ${({ theme }) => css`
     padding: 20px;
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
     :last-child {
       border-bottom: 0;
     }
     &:hover {
-      background: ${theme.beyazHover};
+      background: ${theme.smokeBackground};
       ${SurahVerseNumber} {
         span {
           display: flex;
@@ -165,7 +165,7 @@ const SurahVerse = styled.div`
     ${SurahVerseTranslation} {
       margin-top: 10px;
       em {
-        background-color: ${theme.bunedir};
+        background-color: ${theme.helperBackground};
       }
     }
     ${SurahVerseArabic} {
@@ -174,7 +174,7 @@ const SurahVerse = styled.div`
       font-size: 2em;
       line-height: 1.5em;
       em {
-        background-color: ${theme.bunedir};
+        background-color: ${theme.helperBackground};
       }
     }
     ${SurahVerseTranscription} {
@@ -182,7 +182,7 @@ const SurahVerse = styled.div`
       font-weight: 600;
       color: ${theme.linkColor};
       em {
-        background-color: ${theme.bunedir};
+        background-color: ${theme.helperBackground};
       }
     }
 
@@ -198,7 +198,7 @@ const SurahVerse = styled.div`
         width: 2.25em;
         height: 2.25em;
         :hover {
-          background: ${theme.secondaryBeyaz};
+          background: ${theme.secondaryColor};
           border-radius: 50%;
         }
       }

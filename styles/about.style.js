@@ -17,13 +17,13 @@ const AboutLogo = styled.div`
 
 const AboutMain = styled.section`
   ${({ theme }) => css`
-    border: 1px solid ${theme.secondaryBeyaz};
+    border: 1px solid ${theme.secondaryColor};
     border-radius: 2em;
     width: 100%;
     max-width: 42em;
     box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.04);
     margin: 120px auto;
-    color: ${theme.enSiyah};
+    color: ${theme.primaryDark};
     padding: 2em;
     @media only screen and (max-width: ${theme.sizes.sm}) {
       padding: 0;
@@ -44,7 +44,7 @@ const AboutVerseText = styled.blockquote`
     width: 100%;
     margin: 0 auto;
     font-size: 1em;
-    background-color: ${theme.beyazHover};
+    background-color: ${theme.smokeBackground};
     padding: 32px;
     border-radius: 1em;
 
@@ -78,7 +78,7 @@ const AboutVerseText = styled.blockquote`
 const AboutParagraph = styled.div`
   ${({ theme }) => css`
     margin: 0 0 1em;
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
     padding: 2em 0;
     @media only screen and (max-width: ${theme.sizes.sm}) {
       padding: 1.25em 0;
@@ -89,8 +89,8 @@ const AboutParagraph = styled.div`
 const AboutSocialAndApps = styled.div`
   ${({ theme }) => css`
     margin: 1em 0;
-    border-top: 1px solid ${theme.secondaryBeyaz};
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-top: 1px solid ${theme.secondaryColor};
+    border-bottom: 1px solid ${theme.secondaryColor};
     padding: 2em 0;
     display: flex;
     flex-direction: column;

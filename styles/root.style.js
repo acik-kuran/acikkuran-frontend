@@ -31,7 +31,7 @@ const SC = styled.div`
 const RootMain = styled.section`
   ${({ theme }) => css`
     width: 100%;
-    color: ${theme.enSiyah};
+    color: ${theme.primaryDark};
     padding: 24px 0;
     word-break: break-word;
     max-width: 70em;
@@ -47,7 +47,7 @@ const RootDetail = styled.section`
     max-width: 70em;
     margin: 0 auto;
     ${TabList} {
-      border-bottom: 1px solid ${theme.secondaryBeyaz};
+      border-bottom: 1px solid ${theme.secondaryColor};
     }
     ${TabPanel} {
       border-top: 0;
@@ -67,8 +67,8 @@ const RootDetail = styled.section`
       ${TabList} {
         border-radius: 0;
         border: 0;
-        border-top: 1px solid ${theme.secondaryBeyaz};
-        border-bottom: 1px solid ${theme.secondaryBeyaz};
+        border-top: 1px solid ${theme.secondaryColor};
+        border-bottom: 1px solid ${theme.secondaryColor};
       }
       ${TabPanel} {
         border: 0;
@@ -79,7 +79,7 @@ const RootDetail = styled.section`
       @media only screen and (max-width: ${theme.sizes.sm}) {
         border: 0;
         padding: 0 0 10px 0;
-        border-bottom: 1px solid ${theme.secondaryBeyaz};
+        border-bottom: 1px solid ${theme.secondaryColor};
         span {
           display: none;
         }
@@ -101,7 +101,7 @@ const RootDetail = styled.section`
           height: 2.25em;
           margin-top: 2px;
           :hover {
-            background: ${theme.secondaryBeyaz};
+            background: ${theme.secondaryColor};
             border-radius: 50%;
           }
         }
@@ -117,7 +117,7 @@ const RootDiffs = styled.div`
     align-items: flex-start;
     justify-content: center;
     padding: 1em;
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
   `}
 `;
 
@@ -127,10 +127,10 @@ const RootVerses = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       justify-content: center;
       padding: 1em;
-      border-bottom: 1px solid ${theme.secondaryBeyaz};
+      border-bottom: 1px solid ${theme.secondaryColor};
       @media only screen and (max-width: ${theme.sizes.sm}) {
         padding: 1em 0;
       }
@@ -201,10 +201,10 @@ const RootVerses = styled.div`
             svg {
               width: 18px;
               height: 18px;
-              color: ${theme.ortancaSiyah};
+              color: ${theme.neutralDark};
             }
             :hover {
-              background: ${theme.secondaryBeyaz};
+              background: ${theme.secondaryColor};
             }
           }
         }
@@ -246,7 +246,7 @@ const RootVerseTag = styled.div`
     margin-right: 5px;
     padding: 1px 6px;
     font-size: 12px;
-    background: ${theme.secondaryBeyaz};
+    background: ${theme.secondaryColor};
     border-radius: 4px;
     @media only screen and (max-width: ${theme.sizes.sm}) {
       margin-right: unset;

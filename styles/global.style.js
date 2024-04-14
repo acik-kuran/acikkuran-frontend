@@ -131,7 +131,7 @@ export default createGlobalStyle`
 
       &--colored {
         background-color: ${theme.linkColor};
-        color: ${theme.sarimsi};
+        color: ${theme.pearlYellow};
       }
     }
 
@@ -145,8 +145,8 @@ export default createGlobalStyle`
         text-align: center;
         white-space: nowrap;
         background-color: ${theme.bodyBackground};
-        border: 1px solid ${theme.secondaryBeyaz};
-        color: ${theme.enSiyah};
+        border: 1px solid ${theme.secondaryColor};
+        color: ${theme.primaryDark};
         cursor: pointer;
         justify-content: center;
         align-items: center;
@@ -156,7 +156,7 @@ export default createGlobalStyle`
         font-size: 1em;
         &:hover {
           border-color: ${theme.borderHover};
-          color: ${theme.enSiyah};
+          color: ${theme.primaryDark};
         }
         @media only screen and (max-width: ${theme.sizes.md}) {
           padding-left: 0.5em;
@@ -164,7 +164,7 @@ export default createGlobalStyle`
         }
         @media only screen and (max-width: ${theme.sizes.sm}) {
           &:hover {
-            border-color: ${theme.secondaryBeyaz};
+            border-color: ${theme.secondaryColor};
           }
         }
         &:focus {
@@ -184,7 +184,7 @@ export default createGlobalStyle`
       right: 0;
 
       .bar {
-        background: ${theme.enSiyah};
+        background: ${theme.primaryDark};
         position: fixed;
         z-index: 1031;
         top: 3.5em;
@@ -200,7 +200,7 @@ export default createGlobalStyle`
         right: 0px;
         width: 100px;
         height: 100%;
-        box-shadow: 0 0 10px ${theme.enSiyah}, 0 0 5px ${theme.enSiyah};
+        box-shadow: 0 0 10px ${theme.primaryDark}, 0 0 5px ${theme.primaryDark};
         opacity: 1;
         transform: rotate(3deg) translate(0px, -4px);
       }
@@ -219,8 +219,8 @@ export default createGlobalStyle`
         box-sizing: border-box;
 
         border: solid 3px transparent;
-        border-top-color: ${theme.enSiyah};
-        border-left-color: ${theme.enSiyah};
+        border-top-color: ${theme.primaryDark};
+        border-left-color: ${theme.primaryDark};
         border-radius: 50%;
         animation: nprogress-spinner 400ms linear infinite;
       }

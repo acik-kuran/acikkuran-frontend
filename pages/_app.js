@@ -115,7 +115,7 @@ const Acikkuran = (props) => {
             toastOptions={{
               style: {
                 color: themeMode.bodyBackground,
-                backgroundColor: themeMode.enSiyah,
+                backgroundColor: themeMode.primaryDark,
               },
             }}
             containerStyle={{

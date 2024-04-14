@@ -63,7 +63,7 @@ const VerseMain = styled.section`
     width: 100%;
     max-width: 70em;
     margin: 0 auto;
-    color: ${theme.enSiyah};
+    color: ${theme.primaryDark};
     padding: 1.5em 0;
 
     @media only screen and (max-width: ${theme.sizes.sm}) {
@@ -99,13 +99,13 @@ const VerseMain = styled.section`
         align-items: center;
         justify-content: center;
         :hover {
-          background: ${theme.secondaryBeyaz};
+          background: ${theme.secondaryColor};
         }
 
         svg {
           width: 18px;
           height: 18px;
-          color: ${theme.ortancaSiyah};
+          color: ${theme.neutralDark};
         }
       }
 
@@ -120,7 +120,7 @@ const VerseMain = styled.section`
       }
     }
     ${VerseHeroTranslation} {
-      color: ${theme.ortancaSiyah};
+      color: ${theme.neutralDark};
       font-size: 1.15em;
       line-height: 1.6em;
       @media only screen and (max-width: ${theme.sizes.sm}) {
@@ -171,10 +171,10 @@ const VerseDetail = styled.section`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       justify-content: center;
       padding: 1em;
-      border-bottom: 1px solid ${theme.secondaryBeyaz};
+      border-bottom: 1px solid ${theme.secondaryColor};
       ${VerseAuthor} {
         font-weight: 600;
         span {
@@ -196,7 +196,7 @@ const VerseDetail = styled.section`
     table {
       width: 100%;
       background-color: ${theme.bodyBackground};
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       border-collapse: collapse;
       border-spacing: 0;
       tr {
@@ -208,10 +208,10 @@ const VerseDetail = styled.section`
       }
       th,
       td {
-        border-bottom: 1px solid ${theme.secondaryBeyaz};
+        border-bottom: 1px solid ${theme.secondaryColor};
         padding: 0.5em 0.75em;
         vertical-align: top;
-        color: ${theme.enSiyah};
+        color: ${theme.primaryDark};
         @media only screen and (max-width: ${theme.sizes.xs}) {
           font-size: 0.9em;
         }
@@ -220,7 +220,7 @@ const VerseDetail = styled.section`
         font-weight: 600;
       }
       .sort-number {
-        color: ${theme.ortancaSiyah};
+        color: ${theme.neutralDark};
         width: 20px;
         text-align: center;
         @media only screen and (max-width: ${theme.sizes.sm}) {
@@ -255,7 +255,7 @@ const VerseDetail = styled.section`
     ${TabList} {
       position: sticky;
       top: 3.5em;
-      border-bottom: 1px solid ${theme.secondaryBeyaz};
+      border-bottom: 1px solid ${theme.secondaryColor};
     }
     ${TabPanel} {
       border-top: 0;
@@ -281,7 +281,7 @@ const VerseDetail = styled.section`
         border-radius: 0;
         border: 0;
         padding: 10px 0;
-        border-bottom: 1px solid ${theme.secondaryBeyaz};
+        border-bottom: 1px solid ${theme.secondaryColor};
       }
       ${TabPanel} {
         border: 0;
@@ -303,8 +303,8 @@ const CommonNavigation = styled.div`
         text-align: center;
         white-space: nowrap;
         background-color: ${theme.bodyBackground};
-        border: 1px solid ${theme.secondaryBeyaz};
-        color: ${theme.enSiyah};
+        border: 1px solid ${theme.secondaryColor};
+        color: ${theme.primaryDark};
         cursor: pointer;
         justify-content: center;
         align-items: center;
@@ -317,12 +317,12 @@ const CommonNavigation = styled.div`
         }
         &:hover {
           border-color: ${theme.borderHover};
-          color: ${theme.enSiyah};
+          color: ${theme.primaryDark};
         }
 
         @media only screen and (max-width: ${theme.sizes.sm}) {
           &:hover {
-            border-color: ${theme.secondaryBeyaz};
+            border-color: ${theme.secondaryColor};
           }
         }
 

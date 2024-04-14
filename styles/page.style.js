@@ -83,7 +83,7 @@ const PageOriginalVerse = styled.span`
     }
     ${props.active &&
     css`
-      background-color: ${props.theme.bunedir};
+      background-color: ${props.theme.helperBackground};
     `}
   `}
 `;
@@ -96,8 +96,8 @@ const PageOriginalSurah = styled.div`
     justify-content: center;
     align-items: center;
     padding: 16px;
-    border-bottom: 1px solid ${props.theme.secondaryBeyaz};
-    border-top: 1px solid ${props.theme.secondaryBeyaz};
+    border-bottom: 1px solid ${props.theme.secondaryColor};
+    border-top: 1px solid ${props.theme.secondaryColor};
     margin: 16px 0;
     height: 140px;
     h3 {
@@ -123,8 +123,8 @@ const PageTranslationSurah = styled.div`
     justify-content: center;
     align-items: center;
     padding: 16px;
-    border-bottom: 1px solid ${props.theme.secondaryBeyaz};
-    border-top: 1px solid ${props.theme.secondaryBeyaz};
+    border-bottom: 1px solid ${props.theme.secondaryColor};
+    border-top: 1px solid ${props.theme.secondaryColor};
     margin: 16px 0;
     height: 140px;
     h3 {
@@ -167,7 +167,7 @@ const PageTranslationVerse = styled.div`
       `}
       svg {
         bottom: 8px !important;
-        background: ${props.theme.secondaryBeyaz};
+        background: ${props.theme.secondaryColor};
         border-radius: 50%;
       }
     }
@@ -183,7 +183,7 @@ const PageTranslationVerse = styled.div`
       @media (hover: hover) {
         :hover {
           opacity: 0.8;
-          background: ${props.theme.secondaryBeyaz};
+          background: ${props.theme.secondaryColor};
           border-radius: 50%;
         }
       }
@@ -195,7 +195,7 @@ const PageTranslationVerse = styled.div`
     }
     ${props.active &&
     css`
-      background-color: ${props.theme.thirdBeyaz};
+      background-color: ${props.theme.thirdColor};
     `}
   `}
 `;
@@ -203,7 +203,7 @@ const PageTranslationVerse = styled.div`
 const PageHeader = styled.div`
   ${({ theme }) => css`
     display: flex;
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
     margin-bottom: 8px;
     font-size: 16px;
     padding: 8px;
@@ -252,8 +252,8 @@ const PageEdgeJuz = styled.div`
     height: 4em;
     opacity: 1;
     color: ${theme.bodyBackground};
-    background-color: ${theme.enSiyah};
-    border: 1px solid ${theme.enSiyah};
+    background-color: ${theme.primaryDark};
+    border: 1px solid ${theme.primaryDark};
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -273,16 +273,16 @@ const PageEdge = styled.div`
     width: 100%;
     height: 100%;
     border-right: ${props.left
-      ? `1px solid ${props.theme.secondaryBeyaz}`
+      ? `1px solid ${props.theme.secondaryColor}`
       : "0"};
     border-left: ${props.right
-      ? `1px solid ${props.theme.secondaryBeyaz}`
+      ? `1px solid ${props.theme.secondaryColor}`
       : "0"};
     button {
       cursor: pointer;
     }
     svg {
-      color: ${props.theme.enSiyah};
+      color: ${props.theme.primaryDark};
       opacity: 0.5;
       font-size: 36px;
     }

@@ -17,7 +17,7 @@ import { PlayerContext } from "@utils/playerProvider";
 const SC = styled.div`
   ${({ theme }) => css`
     background: ${theme.bodyBackground};
-    border-top: 1px solid ${theme.secondaryBeyaz};
+    border-top: 1px solid ${theme.secondaryColor};
     position: fixed;
     padding: 0;
     bottom: 0;
@@ -38,7 +38,7 @@ const SC = styled.div`
 
     .rhap_container {
       font-size: 16px;
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       box-shadow: none;
       background-color: ${theme.bodyBackground};
     }
@@ -60,11 +60,11 @@ const SC = styled.div`
     }
 
     .rhap_time {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
     }
 
     .rhap_progress-bar {
-      background-color: ${theme.secondaryBeyaz};
+      background-color: ${theme.secondaryColor};
     }
 
     .rhap_current-time,
@@ -89,7 +89,7 @@ const SC = styled.div`
         height: 22px;
       }
       svg {
-        color: ${theme.enSiyah};
+        color: ${theme.primaryDark};
         :hover {
           /* opacity: 0.6; */
         }
@@ -104,7 +104,7 @@ const SC = styled.div`
         line-height: 0;
         cursor: pointer;
         svg {
-          color: ${theme.enSiyah};
+          color: ${theme.primaryDark};
           :hover {
             opacity: 0.6;
           }
@@ -126,7 +126,7 @@ const SC = styled.div`
         border-radius: 0;
       }
       &-filled {
-        background-color: ${theme.enSiyah};
+        background-color: ${theme.primaryDark};
         border-radius: 0;
       }
     }

@@ -60,8 +60,8 @@ const Tab = styled(ReactTab)`
     }
 
     &.react-tabs__tab--selected {
-      background: ${theme.thirdBeyaz};
-      border-color: ${theme.secondaryBeyaz};
+      background: ${theme.thirdColor};
+      border-color: ${theme.secondaryColor};
       border-bottom-color: transparent;
       align-items: center;
       display: flex;
@@ -69,7 +69,7 @@ const Tab = styled(ReactTab)`
       padding: 0.5em 1em;
       vertical-align: top;
       outline: unset;
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       font-weight: 900;
     }
   `}

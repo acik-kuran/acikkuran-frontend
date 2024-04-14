@@ -81,7 +81,7 @@ const StyledModalHeader = styled.div`
 
     h3 {
       font-size: 1.15em;
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       font-weight: 600;
       line-height: 0;
       margin-top: 3px;
@@ -101,7 +101,7 @@ const StyledModalHeader = styled.div`
       height: 2.25em;
       @media (hover: hover) {
         :hover {
-          background: ${theme.secondaryBeyaz};
+          background: ${theme.secondaryColor};
           border-radius: 50%;
         }
       }

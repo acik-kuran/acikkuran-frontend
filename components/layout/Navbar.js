@@ -71,7 +71,9 @@ const Navbar = (props) => {
                     onClick={() => setShowSearch(true)}
                     style={{ marginLeft: 2 }}
                   >
-                    <RiSearchLine />
+                    <span className="icon">
+                      <RiSearchLine />
+                    </span>
                   </Button>
                 </NavSearch>
               )}

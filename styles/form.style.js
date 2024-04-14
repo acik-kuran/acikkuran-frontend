@@ -198,12 +198,12 @@ const FormInput = styled.input`
   ${({ theme }) => css`
     width: 100%;
     background-color: ${theme.inputBackground};
-    color: ${theme.enSiyah};
+    color: ${theme.primaryDark};
     font-size: 1em;
     font-family: var(--font-inter);
 
     &:disabled {
-      background: ${theme.bunedir};
+      background: ${theme.helperBackground};
     }
 
     box-shadow: rgb(${theme.formInputBorder} / 0%) 0px 0px 0px 0px,
@@ -218,7 +218,7 @@ const FormInput = styled.input`
     outline: none;
 
     &:hover {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       box-shadow: rgb(${theme.formInputBorder} / 0%) 0px 0px 0px 0px,
         rgb(${theme.formInputBorder} / 0%) 0px 0px 0px 0px,
         rgb(${theme.formInputBorder} / 12%) 0px 1px 1px 0px,

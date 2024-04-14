@@ -43,7 +43,7 @@ const BookmarkEmpty = styled.div`
     text-align: center;
     margin: 0 auto;
     svg {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
     }
     h2 {
       font-size: 1.5em;
@@ -52,7 +52,7 @@ const BookmarkEmpty = styled.div`
     }
     p,
     .additional_text {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
       font-size: 1em;
       margin-top: 24px;
     }
@@ -64,12 +64,12 @@ const BookmarkEmpty = styled.div`
 
 const BookmarkVerse = styled.div`
   ${({ theme }) => css`
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
     padding: 20px;
     ${BookmarkVerseTranslation} {
       margin-top: 10px;
       em {
-        background-color: ${theme.bunedir};
+        background-color: ${theme.helperBackground};
       }
     }
     ${BookmarkVerseArabic} {
@@ -79,7 +79,7 @@ const BookmarkVerse = styled.div`
       line-height: 1.5em;
 
       em {
-        background-color: ${theme.bunedir};
+        background-color: ${theme.helperBackground};
       }
     }
     ${BookmarkVerseTranscription} {
@@ -87,7 +87,7 @@ const BookmarkVerse = styled.div`
       font-weight: 600;
       color: ${theme.linkColor};
       em {
-        background-color: ${theme.bunedir};
+        background-color: ${theme.helperBackground};
       }
     }
 
@@ -104,7 +104,7 @@ const BookmarkVerse = styled.div`
         width: 2.25em;
         height: 2.25em;
         :hover {
-          background: ${theme.secondaryBeyaz};
+          background: ${theme.secondaryColor};
           border-radius: 50%;
         }
       }

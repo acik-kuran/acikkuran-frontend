@@ -96,7 +96,7 @@ const Navigation = styled.div`
       border-radius: 50%;
       @media (hover: hover) {
         :hover {
-          background: ${theme.secondaryBeyaz};
+          background: ${theme.secondaryColor};
         }
       }
       svg.navigation__icon {
@@ -112,7 +112,7 @@ const SearchInput = styled.input`
     width: 100%;
     padding: 20px 32px;
     border: 0;
-    color: ${theme.enSiyah};
+    color: ${theme.primaryDark};
     flex-grow: 1;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ const SearchInput = styled.input`
       font-family: var(--font-inter);
     }
     &:hover {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
     }
     &:focus {
       outline: 0;
@@ -176,7 +176,7 @@ const SearchResults = styled.div`
         border-radius: 0 0 0 6px;
       }
       :hover {
-        background: ${(props) => props.theme.beyazHover};
+        background: ${(props) => props.theme.smokeBackground};
       }
     }
   }

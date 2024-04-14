@@ -29,7 +29,7 @@ const SearchArea = styled.div`
     height: 3.5em;
 
     padding: 0 0.5em;
-    border-bottom: 1px solid ${theme.secondaryBeyaz};
+    border-bottom: 1px solid ${theme.secondaryColor};
     box-shadow: 10px -5px 10px -5px rgba(0, 0, 0, 0.59);
     align-items: center;
     input {
@@ -43,7 +43,7 @@ const SearchArea = styled.div`
       width: 2.25em;
       height: 2.25em;
       :hover {
-        background: ${theme.secondaryBeyaz};
+        background: ${theme.secondaryColor};
         border-radius: 50%;
       }
     }
@@ -55,7 +55,7 @@ const SearchInput = styled.input`
     width: 100%;
     padding: 20px;
     background-color: ${theme.bodyBackground};
-    color: ${theme.enSiyah};
+    color: ${theme.primaryDark};
     justify-content: center;
     align-items: center;
     border-radius: 6px 6px 0 0;
@@ -65,7 +65,7 @@ const SearchInput = styled.input`
     border: 0;
     border-radius: 6px;
     &:hover {
-      color: ${theme.enSiyah};
+      color: ${theme.primaryDark};
     }
     &:focus {
       outline: 0;
@@ -114,8 +114,8 @@ const SearchResults = styled.div`
           border-radius: 0 0 0 6px;
         }
         :hover {
-          background: ${theme.secondaryBeyaz};
-          color: ${theme.enEnSiyah};
+          background: ${theme.secondaryColor};
+          color: ${theme.zebra};
         }
       }
     }

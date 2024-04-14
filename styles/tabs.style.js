@@ -14,7 +14,7 @@ const TabList = styled(ReactTabList)`
     display: flex;
     border-radius: 4px 4px 0 0;
     padding: 10px;
-    border: 1px solid ${props.theme.secondaryBeyaz};
+    border: 1px solid ${props.theme.secondaryColor};
     border-bottom: 0;
     ${props.sticky &&
     css`
@@ -44,8 +44,8 @@ const TabListFlex = styled.div`
 const TabListFlexAction = styled.button`
   ${({ theme }) => css`
     padding: 0.5em 1em;
-    background-color: ${theme.sarimsi};
-    border: 1px dashed ${theme.secondaryBeyaz};
+    background-color: ${theme.pearlYellow};
+    border: 1px dashed ${theme.secondaryColor};
     color: ${theme.primaryTextColor};
     border-radius: 4px;
     display: flex;
@@ -78,14 +78,14 @@ const Tab = styled(ReactTab)`
     border-radius: 4px;
     cursor: pointer;
     &:hover {
-      background-color: ${theme.thirdBeyaz};
+      background-color: ${theme.thirdColor};
     }
     svg {
       height: 1em;
     }
     &.react-tabs__tab--selected {
-      background: ${theme.thirdBeyaz};
-      border-color: ${theme.secondaryBeyaz};
+      background: ${theme.thirdColor};
+      border-color: ${theme.secondaryColor};
       border-bottom-color: transparent;
       align-items: center;
       font-weight: 600;
@@ -108,7 +108,7 @@ const Tab = styled(ReactTab)`
 
 const TabPanel = styled(ReactTabPanel)`
   ${({ theme }) => css`
-    border: 1px solid ${theme.secondaryBeyaz};
+    border: 1px solid ${theme.secondaryColor};
     @media only screen and (max-width: ${theme.sizes.sm}) {
       border: 0;
     }

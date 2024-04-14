@@ -13,7 +13,7 @@ const SearchBoxSC = styled.div`
     &.show-random-verses {
       list-style: none;
       padding: 15px 20px;
-      background-color: ${theme.thirdBeyaz};
+      background-color: ${theme.thirdColor};
       width: 100%;
       display: flex;
       align-items: center;
@@ -23,7 +23,7 @@ const SearchBoxSC = styled.div`
         padding: 0 12px 0 0px;
         svg {
           font-size: 1em;
-          color: ${theme.enEnSiyah};
+          color: ${theme.zebra};
         }
       }
     }
@@ -32,8 +32,8 @@ const SearchBoxSC = styled.div`
       a {
         width: 100%;
         cursor: pointer;
-        background-color: ${theme.sarimsi};
-        border-bottom: 1px solid ${theme.bunedir};
+        background-color: ${theme.pearlYellow};
+        border-bottom: 1px solid ${theme.helperBackground};
         display: flex;
         align-items: center;
         .line-icon {
@@ -41,11 +41,11 @@ const SearchBoxSC = styled.div`
           padding: 0 12px 0 0px;
           svg {
             font-size: 1em;
-            color: ${theme.enEnSiyah};
+            color: ${theme.zebra};
           }
         }
         :hover {
-          background-color: ${theme.bunedir};
+          background-color: ${theme.helperBackground};
         }
       }
     }
@@ -79,13 +79,13 @@ const SearchBoxSC = styled.div`
         }
         svg {
           font-size: 1em;
-          color: ${theme.acikGri};
+          color: ${theme.faint};
         }
       }
       .line-content {
         flex-grow: 1;
         em {
-          background-color: ${theme.bunedir};
+          background-color: ${theme.helperBackground};
         }
       }
 
@@ -94,7 +94,7 @@ const SearchBoxSC = styled.div`
         font-weight: 600;
         color: ${theme.linkColor};
         em {
-          background-color: ${theme.bunedir};
+          background-color: ${theme.helperBackground};
         }
       }
 
@@ -105,7 +105,7 @@ const SearchBoxSC = styled.div`
         line-height: 1.55em;
 
         em {
-          background-color: ${theme.bunedir};
+          background-color: ${theme.helperBackground};
         }
       }
     }
@@ -137,12 +137,12 @@ const SearchDetail = styled.section`
     }
     ${TabList} {
       z-index: 2;
-      border-bottom: 1px solid ${theme.secondaryBeyaz};
+      border-bottom: 1px solid ${theme.secondaryColor};
       display: flex;
       justify-content: space-between;
       @media only screen and (max-width: ${theme.sizes.sm}) {
         border: 0;
-        border-bottom: 1px solid ${theme.secondaryBeyaz};
+        border-bottom: 1px solid ${theme.secondaryColor};
         padding: 10px 0;
       }
     }
