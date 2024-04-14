@@ -175,7 +175,7 @@ const Player = () => {
                 RHAP_UI.CURRENT_TIME,
                 RHAP_UI.PROGRESS_BAR,
                 RHAP_UI.DURATION,
-                <div className="player__close">
+                <div className="player__close" key="plyc">
                   <RiCloseCircleLine
                     onClick={() => storeAudioSurah({})}
                     size="22"
@@ -184,7 +184,7 @@ const Player = () => {
               ]}
               customControlsSection={[
                 RHAP_UI.MAIN_CONTROLS,
-                <div className="player__surah_name">
+                <div className="player__surah_name" key="plys">
                   <Link
                     href={`/[surah_id]`}
                     as={`/${audioSurah.id}`}
