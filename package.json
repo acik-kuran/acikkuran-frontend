@@ -1,6 +1,9 @@
 {
-  "name": "acik-frontend-v3",
-  "version": "0.1.0",
+  "name": "acikkuran-frontend",
+  "version": "1.0.0",
+  "description": "acikkuran frontend with nextjs.",
+  "author": "ugur sozen <sozenugur@gmail.com> (https://x.com/ziegfiroyt)",
+  "license": "CC-BY-NC-SA-4.0",
   "private": true,
   "scripts": {
     "dev": "next -p 2018",
