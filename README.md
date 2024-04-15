@@ -61,6 +61,7 @@ git clone https://github.com/ziegfiroyt/acikkuran-frontend
 2. Copy the .env.example file to .env and fill in the relevant fields:
 
 ```bash
+cd acikkuran-frontend
 cp .env.example .env
 ```
 
@@ -69,7 +70,6 @@ cp .env.example .env
 4. Install dependencies:
 
 ```bash
-cd acikkuran-frontend
 yarn install
 ```
 
