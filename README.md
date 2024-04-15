@@ -2,12 +2,16 @@
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
 <img src="https://raw.githubusercontent.com/ziegfiroyt/acikkuran-api/main/logo.png" width="100" alt="Apaçık Kur'an'a andolsun!">
 
 [https://acikkuran.com](https://acikkuran.com)
 
 "O mankind: there has come to you evidence from your Lord; and We have sent down to you a clear light."
-— [Qur'an 4:174](https://en.acikkuran.com/4/174)
+— [Qur'an 4:174](https://quran.so/4/174)
 
 ## Table of Contents
 
@@ -28,7 +32,7 @@ Acikkuran.com operates independently and is not affiliated with any group, commu
 ## Features
 
 - An interface that allows people to read and study the Qur'an in a simple, ad-free, and user-friendly manner.
-- The multilingual infrastructure of the site is hosted at acikkuran.com for Turkish and quran.so for English, with plans to add support for other languages later.
+- The multilingual infrastructure of the site is hosted at [acikkuran.com](https://acikkuran.com) for Turkish and [quran.so](https://quran.so) for English, with plans to add support for other languages later.
 - Membership login allows users to customize their reading habits and track their reading times.
   - It utilizes the NextAuth package for authentication, supporting Google and email login providers.
   - Single-use codes for login authentication can be sent via email, enhancing security and user verification.
