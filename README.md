@@ -79,6 +79,8 @@ Start the development server:
 yarn dev
 ```
 
+_Note: Membership-related features (endpoints in the /api folder) require Hasura integration in the .env file. A test Hasura environment and membership migrations will be provided soon._
+
 ## Contributing
 
 Thank you for considering contributing to our project. Your contributions can help improve the project and grow our community. To ensure smooth collaboration, please follow these guidelines:
