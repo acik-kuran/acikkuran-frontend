@@ -29,6 +29,8 @@ Acikkuran.com is an open-source project founded on the principles of volunteeris
 
 Acikkuran.com operates independently and is not affiliated with any group, community, ideology, institution, organization, association, or foundation.
 
+All service and server expenses are covered by support from [Patreon](https://patreon.com/acikkuran).
+
 ## Features
 
 - An interface that allows people to read and study the Qur'an in a simple, ad-free, and user-friendly manner.
