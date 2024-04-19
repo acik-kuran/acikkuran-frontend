@@ -49,7 +49,7 @@ const SocialIcons = ({ isFooter = false }) => {
         name="instagram"
       />
       <SocialIcon
-        url="https://github.com/ziegfiroyt/acikkuran-api"
+        url="https://github.com/acik-kuran"
         icon={RiGithubLine}
         name="github"
       />

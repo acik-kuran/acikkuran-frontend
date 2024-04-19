@@ -6,7 +6,7 @@
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-<img src="https://raw.githubusercontent.com/ziegfiroyt/acikkuran-api/main/logo.png" width="100" alt="Apaçık Kur'an'a andolsun!">
+<img src="https://raw.githubusercontent.com/acik-kuran/acikkuran-api/main/logo.png" width="100" alt="Apaçık Kur'an'a andolsun!">
 
 [https://acikkuran.com](https://acikkuran.com)
 
@@ -55,7 +55,7 @@ To get started with the application, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/ziegfiroyt/acikkuran-frontend
+git clone https://github.com/acik-kuran/acikkuran-frontend
 ```
 
 2. Copy the .env.example file to .env and fill in the relevant fields:
@@ -93,7 +93,7 @@ Thank you for considering contributing to our project. Your contributions can he
 
 3. **Work on Your Changes:** Make your changes in your forked repository. Remember to write clear and concise commit messages that describe the purpose of your changes.
 
-   - If your frontend development requires changes in the backend as well, please feel free to reach out. Our backend repository is also open source. Check this out: [Açık Kuran API](https://github.com/ziegfiroyt/acikkuran-api)
+   - If your frontend development requires changes in the backend as well, please feel free to reach out. Our backend repository is also open source. Check this out: [Açık Kuran API](https://github.com/acik-kuran/acikkuran-api)
 
 4. **Submitting Changes:** When you're ready to submit your changes:
 
