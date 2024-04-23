@@ -220,6 +220,23 @@ const AboutTechsList = styled.ul`
   }
 `;
 
+const PrivacyText = styled.div`
+  ${({ theme }) => css`
+    font-size: 1.1em;
+    line-height: 1.6;
+
+    h2 {
+      font-size: 1em;
+      font-weight: 700;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 0.85em;
+      margin-bottom: 1em;
+    }
+  `}
+`;
+
 export {
   AboutMain,
   AboutVerseText,
@@ -234,4 +251,5 @@ export {
   AboutTechs,
   AboutTechsList,
   PatreonProgress,
+  PrivacyText,
 };
