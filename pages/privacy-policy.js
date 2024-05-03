@@ -4,50 +4,23 @@ import { BreadcrumbJsonLd, NextSeo } from "next-seo";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import AppStoreSvg from "public/images/app_store.svg";
-import GooglePlaySvg from "public/images/google_play.svg";
-import DigitalOceanSvg from "public/images/techs/digitalocean.svg";
-import FastifySvg from "public/images/techs/fastify.svg";
-import HasuraSvg from "public/images/techs/hasura.svg";
-import MeilisearchSvg from "public/images/techs/meilisearch.svg";
-import NextjsSvg from "public/images/techs/nextjs.svg";
-import ReactSvg from "public/images/techs/react.svg";
-import UpstashSvg from "public/images/techs/upstash.svg";
-import VercelSvg from "public/images/techs/vercel.svg";
 import React, { useEffect, useState } from "react";
 import { RiHome6Line } from "react-icons/ri";
-import { TbBrandPatreonFilled } from "react-icons/tb";
 import { useRecoilValue } from "recoil";
 import { useTheme } from "styled-components";
 
 import Organization from "@components/common/Organization";
 import Error from "@components/layout/Error";
 import Navbar from "@components/layout/Navbar";
-import { PatreonButton } from "@components/ui/DesktopSearch/DesktopSearch.style";
-import SocialIcons from "@components/ui/SocialIcons/SocialIcons";
-import { envInfoState } from "@recoil/atoms";
-import {
-  AboutApps,
-  AboutLogo,
-  AboutMain,
-  AboutParagraph,
-  AboutPatreon,
-  AboutSocialAndApps,
-  AboutTechs,
-  AboutTechsList,
-  AboutVerseText,
-  PatreonDescription,
-  PrivacyText,
-} from "@styles/about.style";
+import { AboutLogo, AboutMain, PrivacyText } from "@styles/about.style";
 import { Content } from "@styles/global.style";
 import { Col, Container, Row, SC } from "@styles/verse.style";
-import { initGA, logEvent, logPageView } from "@utils/analytics";
+import { initGA, logPageView } from "@utils/analytics";
 import languageAlternates from "@utils/languageAlternates";
 
 const About = (props) => {
   const { errorCode, locale } = props;
   const { theme } = useTheme();
-  const envInfo = useRecoilValue(envInfoState);
   const { t } = useTranslation("common");
   const router = useRouter();
 
