@@ -12,13 +12,11 @@ module.exports = [
       height: "20px",
     },
     heroImages: {
-      dark: "https://images.unsplash.com/photo-1507237081139-5dfb209dba79?q=92&w=1436&h=900&auto=format&fit=crop",
-      light:
-        "https://images.unsplash.com/photo-1566932864796-7fdc701a10b8?q=92&w=1436&auto=format&fit=crop",
+      dark: "/locales/tr/images/bg/d-bg.webp",
+      light: "/locales/tr/images/bg/bg.webp",
       darkMobile:
-        "https://images.unsplash.com/photo-1509484710660-55e53f20a84b?q=99&w=502&h=1000&auto=format&fit=crop",
-      lightMobile:
-        "https://images.unsplash.com/photo-1566932864796-7fdc701a10b8?q=99&w=502&h=1000&auto=format&fit=crop",
+        "/locales/tr/images/bg/d-bg-m.webp",
+      lightMobile: "/locales/tr/images/bg/bg-m.webp",
     },
     createPasswordEmailParams: {
       site_title: "Açık Kuran",
@@ -43,12 +41,10 @@ module.exports = [
     },
     heroImages: {
       dark: "https://images.unsplash.com/photo-1507237081139-5dfb209dba79?q=92&w=1436&h=900&auto=format&fit=crop",
-      light:
-        "https://images.unsplash.com/photo-1528493366314-e317cd98dd52?q=95&w=1436&h=600&auto=format&fit=crop",
+      light: "/locales/en/images/bg/bg.webp",
       darkMobile:
         "https://images.unsplash.com/photo-1509484710660-55e53f20a84b?q=95&w=502&h=1000&auto=format&fit=crop",
-      lightMobile:
-        "https://images.unsplash.com/photo-1528493366314-e317cd98dd52?q=95&w=502&h=1000&auto=format&fit=crop",
+      lightMobile: "/locales/en/images/bg/bg-m.webp",
     },
     createPasswordEmailParams: {
       site_title: "Quran.so",
