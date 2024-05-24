@@ -30,7 +30,7 @@ const DesktopSearch = dynamic(() => import("@components/ui/DesktopSearch"), {
 
 const Navbar = (props) => {
   const { hideSearchButton, hideBottom, children, isAmp } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const locale = process.env.NEXT_PUBLIC_LOCALE;
   const [navWidth, setNavWidth] = useState(
     theme.awesomegrid.breakpoints.lg * 16

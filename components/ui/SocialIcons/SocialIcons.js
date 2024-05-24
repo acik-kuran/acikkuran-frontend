@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import {
   RiGithubLine,
   RiInstagramLine,
@@ -35,16 +36,17 @@ const SocialIcon = ({ icon: Component, url, name }) => {
 };
 
 const SocialIcons = ({ isFooter = false }) => {
+  const { t } = useTranslation("common"); 
   const envInfo = useRecoilValue(envInfoState);
   return (
     <SC isFooter={isFooter}>
       <SocialIcon
-        url="https://x.com/acikkuran"
+        url={t("social_urls__twitter")}
         icon={RiTwitterXLine}
         name="twitter"
       />
       <SocialIcon
-        url="https://www.instagram.com/acikkuran"
+        url={t("social_urls__instagram")}
         icon={RiInstagramLine}
         name="instagram"
       />

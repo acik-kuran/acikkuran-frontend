@@ -3,7 +3,7 @@ import { SocialProfileJsonLd } from "next-seo";
 import React from "react";
 
 const Organization = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <SocialProfileJsonLd
       type="Organization"
@@ -11,8 +11,8 @@ const Organization = () => {
       url={t("seo__base_url")}
       sameAs={[
         "https://www.facebook.com/acikkuran",
-        "https://www.instagram.com/acikkuran",
-        "https://x.com/acikkuran", // TODO: locale
+        t("social_urls__twitter"),
+        t("social_urls__instagram"),
       ]}
     />
   );

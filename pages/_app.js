@@ -63,8 +63,8 @@ const Acikkuran = (props) => {
       ],
     },
     twitter: {
-      handle: "@acikkuran",
-      site: "@acikkuran",
+      handle: t("seo__twitter_handle"),
+      site: t("seo__twitter_handle"),
       cardType: "summary",
     },
   };

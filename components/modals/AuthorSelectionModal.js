@@ -104,7 +104,7 @@ const sortAuthorsByOrder = (authors, sortOrder) => {
 const AuthorSelectionModal = (props) => {
   const { modalKey, fullscreen } = props;
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const locale = process.env.NEXT_PUBLIC_LOCALE;
   const [modalInfo, setModalInfo] = useRecoilState(modalState);
   const { data: session } = useSession();

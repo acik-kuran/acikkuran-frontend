@@ -15,7 +15,7 @@ import { SearchBoxSC } from "@styles/search.style";
 const locale = process.env.NEXT_PUBLIC_LOCALE;
 
 export const ShowRandomVersesLine = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <SearchBoxSC className="show-random-verses">
       <div className="line-icon line-icon__random">
@@ -30,7 +30,7 @@ export const ShowRandomVersesLine = () => {
 
 export const SearchAllLine = (props) => {
   const { searchParam, setShowSearch } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   const router = useRouter();
   return (
     <SearchBoxSC
@@ -61,7 +61,7 @@ export const SearchAllLine = (props) => {
 
 export const SurahLine = (props) => {
   const { id, names, setShowSearch } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   const surahNameIndex = locale === "tr" ? 0 : 1;
   return (
@@ -92,7 +92,7 @@ export const SurahLine = (props) => {
 
 export const VerseLine = (props) => {
   const { surah_id, surah_name, verse_number, setShowSearch } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <SearchBoxSC
       onClick={() => {
@@ -122,7 +122,7 @@ export const VerseLine = (props) => {
 
 export const TranslationLine = (props) => {
   const { surah, verse, setShowSearch, searchParam } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   const surahNames = {
     tr: surah.name,
