@@ -41,7 +41,7 @@ import Share from "@components/ui/Share";
 import VerseExpand from "@components/ui/VerseExpand";
 import defaultAuthorSelections from "@data/defaultAuthorSelections";
 import useStreakTimer from "@hooks/useStreakTimer";
-import { envInfoState, modalState } from "@recoil/atoms";
+import { envInfoState, modalState, targetVerseState } from "@recoil/atoms";
 import { Content } from "@styles/global.style";
 import { NavSearch } from "@styles/navbar.style";
 import { TabListFlex, TabListFlexAction } from "@styles/tabs.style";
@@ -183,6 +183,7 @@ const Verse = (props) => {
   }, [verse]);
 
   const [_, setModalInfo] = useRecoilState(modalState);
+  const [targetVerse, setTargetVerseValue] = useRecoilState(targetVerseState);
   const [selectedVerseTab, setSelectedVerseTab] = useState(0);
 
   const currentSlug = useMemo(() => {
@@ -700,6 +701,13 @@ const Verse = (props) => {
                               <td className="arabic">
                                 {x.root && (
                                   <Link
+                                    onClick={() => {
+                                      setTargetVerseValue({
+                                        surah_id: surah.id,
+                                        verse_number: verse.number,
+                                        sort_number: x.sort_number,
+                                      });
+                                    }}
                                     href={`/root/[latin]`}
                                     as={`/root/${x.root.latin}`}
                                     className="root-link"

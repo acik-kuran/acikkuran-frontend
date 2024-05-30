@@ -26,3 +26,8 @@ export const streakState = atom({
   key: "streakStateKey",
   default: {},
 });
+
+export const targetVerseState = atom({
+  key: 'targetVerseState',
+  default: {},
+});

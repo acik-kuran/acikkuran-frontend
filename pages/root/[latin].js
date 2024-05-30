@@ -13,6 +13,7 @@ import {
   RiArrowDownSLine,
   RiArrowLeftLine,
   RiArrowRightSLine,
+  RiArrowUpLine,
   RiArrowUpSLine,
   RiGitMergeLine,
 } from "react-icons/ri";
@@ -28,7 +29,7 @@ import Footer from "@components/layout/Footer";
 import Navbar from "@components/layout/Navbar";
 import VerseExpand from "@components/ui/VerseExpand";
 import rootchars from "@data/rootchars";
-import { envInfoState } from "@recoil/atoms";
+import { envInfoState, targetVerseState } from "@recoil/atoms";
 import { Content } from "@styles/global.style";
 import {
   Col,
@@ -36,6 +37,7 @@ import {
   EmptyVersesData,
   RootDetail,
   RootMain,
+  RootMainGoToTop,
   RootTitleArabic,
   RootTitleTranscription,
   RootVerse,
@@ -83,10 +85,27 @@ const Root = (props) => {
   const [roots, setRoots] = useState([]);
   const [rootChar, setRootChar] = useState(root.rootchar_id);
   const [loading, setLoading] = useState(true);
+  const [showButton, setShowButton] = useState(false);
+  const targetVerseValue = useRecoilValue(targetVerseState);
 
   const [navWidth, setNavWidth] = useState(
     theme.awesomegrid.breakpoints.lg * 16
   );
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleVerse = (id) => {
     if (!showVerses.find((i) => i === id)) {
@@ -96,11 +115,25 @@ const Root = (props) => {
     }
   };
 
+  useEffect(() => {
+    if (targetVerseValue) {
+      const elementId = `${targetVerseValue.surah_id}-${targetVerseValue.verse_number}-${targetVerseValue.sort_number}`;
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.classList.add("highlighted");
+        const yOffset = -340;
+        const y =
+          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+  }, [versesData]);
+
   const fetchFilters = async (latin) => {
     setLoading(true);
 
     const { data: rootVersesData, links: rootVersesLinks } = await fetchJson(
-      `${process.env.NEXT_PUBLIC_API_URL}/root/latin/${latin}/verseparts?author=${authorId}`
+      `${process.env.NEXT_PUBLIC_API_URL}/root/latin/${latin}/verseparts?author=${authorId}&limit=1200&page=1`
     );
     setVersesData(rootVersesData);
     setVersesLinkNext(
@@ -182,6 +215,10 @@ const Root = (props) => {
     return parse(transcriptions[locale]);
   }, [root]);
 
+  const goToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <SC>
       <Head>
@@ -254,6 +291,16 @@ const Root = (props) => {
           )}
         </React.Fragment>
       </Navbar>
+      <RootMainGoToTop>
+        <span
+          className={`go-to-top-button ${showButton ? "show" : ""}`}
+          onClick={() => {
+            goToTop();
+          }}
+        >
+          <RiArrowUpLine /> {t("root__go_to_top")}
+        </span>
+      </RootMainGoToTop>
       <Content>
         <RootMain>
           <Container>
@@ -319,6 +366,7 @@ const Root = (props) => {
                               const surahName = surahNames[locale];
                               return (
                                 <RootVerse
+                                  id={`${x.surah.id}-${x.verse.verse_number}-${x.sort_number}`}
                                   key={x.id}
                                   onClick={() => {
                                     !showVerse && toggleVerse(x.id);
@@ -329,7 +377,7 @@ const Root = (props) => {
                                       <div>
                                         <Link
                                           role="button"
-                                          href={`/[ surah_id]/[verse_number]`}
+                                          href={`/[surah_id]/[verse_number]`}
                                           as={`/${x.surah.id}/${x.verse.verse_number}`}
                                           tabIndex="0"
                                         >

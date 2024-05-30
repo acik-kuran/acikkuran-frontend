@@ -28,6 +28,57 @@ const SC = styled.div`
   }
 `;
 
+const RootMainGoToTop = styled.div`
+  ${({ theme }) => css`
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: 0;
+    margin: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    pointer-events: none;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      color: ${theme.primaryDark};
+    }
+
+    .go-to-top-button {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+        visibility 0.3s ease-in-out;
+    }
+
+    .go-to-top-button.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    span {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      gap: 4px;
+      color: ${theme.primaryDark};
+      border-radius: 4px;
+      border: 1px solid ${theme.borderHover};
+      font-size: 14px;
+      background-color: ${theme.bodyBackground};
+      pointer-events: painted;
+    }
+  `}
+`;
+
 const RootMain = styled.section`
   ${({ theme }) => css`
     width: 100%;
@@ -123,6 +174,9 @@ const RootDiffs = styled.div`
 
 const RootVerses = styled.div`
   ${({ theme }) => css`
+    .infinite-scroll-component {
+      overflow: visible !important;
+    }
     ${RootVerse} {
       display: flex;
       flex-direction: column;
@@ -131,6 +185,15 @@ const RootVerses = styled.div`
       justify-content: center;
       padding: 1em;
       border-bottom: 1px solid ${theme.secondaryColor};
+      &.highlighted {
+        background: ${theme.thirdColor};
+        @media only screen and (max-width: ${theme.sizes.sm}) {
+          margin: 0 -16px;
+          padding-left: 16px;
+          padding-right: 16px;
+          width: 100dvw;
+        }
+      }
       @media only screen and (max-width: ${theme.sizes.sm}) {
         padding: 1em 0;
       }
@@ -272,6 +335,7 @@ export {
   Col,
   SC,
   RootMain,
+  RootMainGoToTop,
   RootDetail,
   RootVerses,
   RootVerse,
