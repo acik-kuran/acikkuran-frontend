@@ -180,7 +180,7 @@ const Page = (props) => {
       </Head>
       <NextSeo
         languageAlternates={languageAlternates(router)}
-        noindex={process.env.NEXT_PUBLIC_ENVIRONMENT !== "production"}
+        noindex
         title={escapeHtml(pageDesc)}
         description={escapeHtml(pageDesc)}
         openGraph={{

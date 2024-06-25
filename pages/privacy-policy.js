@@ -53,7 +53,7 @@ const About = (props) => {
       <Head></Head>
       <NextSeo
         languageAlternates={languageAlternates(router)}
-        noindex={process.env.NEXT_PUBLIC_ENVIRONMENT !== "production"}
+        noindex
         title={`${t("seo__privacy__title")} - ${t("seo__base_title")}`}
         openGraph={{
           locale: locale,
