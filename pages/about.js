@@ -155,7 +155,7 @@ const About = (props) => {
                       }
                       logEvent("patreon-button", `goto-patreon`);
                     }}
-                    href="https://www.patreon.com/join/acikkuran"
+                    href={t("social_urls__patreon")}
                     target="_blank"
                   >
                     <TbBrandPatreonFilled /> {t("about__patreon_button_label")}

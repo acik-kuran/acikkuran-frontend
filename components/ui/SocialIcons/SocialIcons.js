@@ -36,7 +36,7 @@ const SocialIcon = ({ icon: Component, url, name }) => {
 };
 
 const SocialIcons = ({ isFooter = false }) => {
-  const { t } = useTranslation("common"); 
+  const { t } = useTranslation("common");
   const envInfo = useRecoilValue(envInfoState);
   return (
     <SC isFooter={isFooter}>
@@ -62,7 +62,7 @@ const SocialIcons = ({ isFooter = false }) => {
       />
       {envInfo !== "ios" && (
         <SocialIcon
-          url="https://www.patreon.com/join/acikkuran"
+          url={t("social_urls__patreon")}
           icon={TbBrandPatreon}
           name="patreon"
         />
