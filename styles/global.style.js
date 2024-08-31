@@ -142,6 +142,7 @@ export default createGlobalStyle`
         padding-left: 1em;
         padding-right: 1em;
         padding-top: calc(0.5em);
+        height: 36px;
         text-align: center;
         white-space: nowrap;
         background-color: ${theme.bodyBackground};

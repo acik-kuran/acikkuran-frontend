@@ -39,10 +39,10 @@ module.exports = [
       height: "14px",
     },
     heroImages: {
-      dark: "/locales/en/images/bg/d-bg.webp",
-      light: "/locales/en/images/bg/bg.webp",
-      darkMobile: "/locales/en/images/bg/d-bg-m.webp",
-      lightMobile: "/locales/en/images/bg/bg-m.webp",
+      dark: "/locales/tr/images/bg/d-bg.webp",
+      light: "/locales/tr/images/bg/bg.webp",
+      darkMobile: "/locales/tr/images/bg/d-bg-m.webp",
+      lightMobile: "/locales/tr/images/bg/bg-m.webp",
     },
     createPasswordEmailParams: {
       site_title: "Quran.so",

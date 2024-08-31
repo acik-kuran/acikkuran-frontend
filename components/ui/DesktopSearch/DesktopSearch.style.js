@@ -37,11 +37,13 @@ const SearchArea = styled.div`
     background: ${theme.bodyBackground};
     box-shadow: ${theme.searchAreaInputShadow};
     border: 1px solid ${theme.searchBorderColor};
+    height: 72px;
 
     z-index: 333;
     @media only screen and (max-width: ${theme.sizes.sm}) {
       max-width: unset;
       background: ${theme.searchInputMobileBgColor};
+      height: 64px;
     }
   `}
 `;
@@ -110,7 +112,7 @@ const Navigation = styled.div`
 const SearchInput = styled.input`
   ${({ theme }) => css`
     width: 100%;
-    padding: 20px 32px;
+    padding: 0 32px;
     border: 0;
     color: ${theme.primaryDark};
     flex-grow: 1;
