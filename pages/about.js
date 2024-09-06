@@ -190,7 +190,7 @@ const About = (props) => {
                           logEvent("google-play-button", `goto-google-play`);
                         }}
                         aria-label="Google Play'de Açık Kuran'ı indir"
-                        href="https://play.google.com/store/apps/details?id=com.acikkuranrn&utm_source=web"
+                        href={t("apps__android")}
                         target="_blank"
                       >
                         <GooglePlaySvg />
