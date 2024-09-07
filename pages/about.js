@@ -146,24 +146,27 @@ const About = (props) => {
                     __html: t("about__description"),
                   }}
                 ></AboutParagraph>
-                <AboutPatreon>
-                  <PatreonButton
-                    onClick={() => {
-                      if (!window.GA_INITIALIZED) {
-                        initGA();
-                        window.GA_INITIALIZED = true;
-                      }
-                      logEvent("patreon-button", `goto-patreon`);
-                    }}
-                    href={t("social_urls__patreon")}
-                    target="_blank"
-                  >
-                    <TbBrandPatreonFilled /> {t("about__patreon_button_label")}
-                  </PatreonButton>
-                  <PatreonDescription>
-                    {t("about__patreon_helper")}
-                  </PatreonDescription>
-                </AboutPatreon>
+                {envInfo !== "ios" && (
+                  <AboutPatreon>
+                    <PatreonButton
+                      onClick={() => {
+                        if (!window.GA_INITIALIZED) {
+                          initGA();
+                          window.GA_INITIALIZED = true;
+                        }
+                        logEvent("patreon-button", `goto-patreon`);
+                      }}
+                      href={t("social_urls__patreon")}
+                      target="_blank"
+                    >
+                      <TbBrandPatreonFilled />{" "}
+                      {t("about__patreon_button_label")}
+                    </PatreonButton>
+                    <PatreonDescription>
+                      {t("about__patreon_helper")}
+                    </PatreonDescription>
+                  </AboutPatreon>
+                )}
                 <AboutSocialAndApps>
                   {envInfo !== "android" && envInfo !== "ios" && (
                     <AboutApps>
