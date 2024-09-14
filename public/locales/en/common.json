@@ -144,7 +144,7 @@
     "seo__index__desc": "Quran.so is an ad-free Quranic website where word roots and verse connections can be explored. Offering a variety of translation options and user-friendly features, Quran.so is an ideal resource for anyone seeking to understand the Quran.",
     "seo__search__title_prefix": "Search: ",
     "seo__root__desc": "Words containing the root {{transcription}} / {{arabic}} and their corresponding verses in the Quran.",
-    "seo__verse__title": "Surah {{surah_name}}, Verse {{verse_number}}",
+    "seo__verse__title": "Surah {{surah_name}}, Verse {{verse_number}} - Quran {{surah_id}}:{{verse_number}}",
     "seo__verse__breadcrumb_surah": "Surah {{surah_name}}",
     "seo__verse__breadcrumb_verse": "Verse {{verse_number}}",
     "seo__surah__desc": "On this page, you can find the recitation and translation of Surah {{surah_name}}. Additionally, you can listen to the English audio of the {{surah_name}} chapter.",

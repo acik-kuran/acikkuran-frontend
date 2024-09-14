@@ -264,8 +264,12 @@ const Verse = (props) => {
         title={`${t("seo__verse__title", {
           surah_name: surahName,
           verse_number: verse.number,
-        })} - ${t("seo__base_title")}`}
-        description={translation?.text?.replace(/\[.*?\]/g, "")}
+          surah_id: surah.id,
+        })}`}
+        description={`${translation?.text?.replace(
+          /\[.*?\]/g,
+          ""
+        )} - ${verseTranscription.split(" ").slice(0, 10).join(" ")}`}
         openGraph={{
           type: "article",
           locale: locale,
@@ -273,8 +277,12 @@ const Verse = (props) => {
           title: `${t("seo__verse__title", {
             surah_name: surahName,
             verse_number: verse.number,
-          })} - ${t("seo__base_title")}`,
-          description: translation?.text?.replace(/\[.*?\]/g, ""),
+            surah_id: surah.id,
+          })}`,
+          description: `${translation?.text?.replace(
+            /\[.*?\]/g,
+            ""
+          )} - ${verseTranscription.split(" ").slice(0, 10).join(" ")}`,
         }}
       />
       <Organization />

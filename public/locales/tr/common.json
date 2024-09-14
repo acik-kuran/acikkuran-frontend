@@ -144,7 +144,7 @@
     "seo__index__desc": "Açık Kuran, kelime köklerinin ve ayet bağlantılarının incelenebildiği, reklamsız bir Kur'an sitesidir. Çok sayıda farklı çeviri seçenekleri sunan ve kullanımı kolay olan Açık Kuran, Kuran'ı anlamak isteyen herkes için ideal bir kaynaktır.",
     "seo__search__title_prefix": "Ara: ",
     "seo__root__desc": "Kuran'da {{transcription}} / {{arabic}} kökü içeren kelimeler ve ayet karşılıkları.",
-    "seo__verse__title": "{{surah_name}} suresi {{verse_number}}. ayet",
+    "seo__verse__title": "{{surah_name}} suresi {{verse_number}}. ayet - Açık Kuran",
     "seo__verse__breadcrumb_surah": "{{surah_name}} suresi",
     "seo__verse__breadcrumb_verse": "{{verse_number}}. ayet meali",
     "seo__surah__desc": "{{surah_name}} suresi, Kuran'ın {{surah_id}}. suresidir. {{surah_name}} suresi okunuşu ve mealini bu sayfada bulabilirsiniz. Ayrıca {{surah_name}} suresi sesli mealini dinleyebilirsiniz.",
