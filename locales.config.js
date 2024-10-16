@@ -48,7 +48,7 @@ module.exports = [
       site_title: "Quran.so",
       description: "Your single-use password is below.",
       greetings: "Hello,",
-      twitter_handle: "quranso_",
+      twitter_handle: "qurandotso",
       logo_src:
         "https://quran.so/locales/en/images/manifest/android-chrome-192x192.png",
       subject: "Quran.so - Single-use Password",
