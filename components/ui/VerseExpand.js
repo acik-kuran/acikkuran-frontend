@@ -70,7 +70,7 @@ const verseExpand = (props) => {
         <p
           dangerouslySetInnerHTML={{
             __html: refineGrammar(
-              (_formatted?.text || text)?.replace(/\s*\[.*?\]\s*/g, " ").trim()
+              (_formatted?.text || text)?.replace(/\[.*?\]/g, "").trim()
             ),
           }}
         />

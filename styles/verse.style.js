@@ -185,6 +185,7 @@ const VerseDetail = styled.section`
       }
       ${VerseText} {
         margin-top: 4px;
+        width: 100%;
       }
       :last-child {
         border: 0;

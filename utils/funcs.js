@@ -79,11 +79,20 @@ export const goToRoot = (latin) => {
   );
 };
 
-export const authorOptions = (authors) => {
+export const authorOptions = (authors, language) => {
   let authorOptions = [];
-  authors.map((item) => {
-    authorOptions.push({ value: item.id, label: item.name });
-  });
+  authors
+    .filter((author) =>
+      language == "en" ? author.language === language : true
+    )
+    .sort((a, b) => {
+      if (a.language === language && b.language !== language) return -1;
+      if (a.language !== language && b.language === language) return 1;
+      return a.name.localeCompare(b.name);
+    })
+    .map((item) => {
+      authorOptions.push({ value: item.id, label: item.name });
+    });
   return authorOptions;
 };
 

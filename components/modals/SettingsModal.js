@@ -84,7 +84,7 @@ const SettingsModal = (props) => {
     const { data } = await fetchJson(
       `${process.env.NEXT_PUBLIC_API_URL}/authors`
     );
-    setAuthors(authorOptions(data));
+    setAuthors(authorOptions(data, locale));
   };
 
   useEffect(() => {
