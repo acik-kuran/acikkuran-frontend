@@ -81,6 +81,9 @@ export const goToRoot = (latin) => {
 
 export const authorOptions = (authors, language) => {
   let authorOptions = [];
+  // Filter authors based on language and sort them alphabetically
+  // For English, only show English authors
+  // For other languages, show all authors with that language first
   authors
     .filter((author) =>
       language == "en" ? author.language === language : true
