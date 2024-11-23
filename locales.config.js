@@ -13,9 +13,9 @@ module.exports = [
     },
     heroImages: {
       dark: "/locales/tr/images/bg/d-bg.webp",
-      light: "/locales/tr/images/bg/bg.webp",
+      light: "https://audio.acikkuran.com/images/acbg.webp",
       darkMobile: "/locales/tr/images/bg/d-bg-m.webp",
-      lightMobile: "/locales/tr/images/bg/bg-m.webp",
+      lightMobile: "https://audio.acikkuran.com/images/acmb.webp",
     },
     createPasswordEmailParams: {
       site_title: "Açık Kuran",
@@ -40,9 +40,9 @@ module.exports = [
     },
     heroImages: {
       dark: "/locales/tr/images/bg/d-bg.webp",
-      light: "/locales/tr/images/bg/bg.webp",
+      light: "https://audio.acikkuran.com/images/acbg.webp",
       darkMobile: "/locales/tr/images/bg/d-bg-m.webp",
-      lightMobile: "/locales/tr/images/bg/bg-m.webp",
+      lightMobile: "https://audio.acikkuran.com/images/acmb.webp",
     },
     createPasswordEmailParams: {
       site_title: "Quran.so",
