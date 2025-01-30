@@ -288,6 +288,14 @@ const About = (props) => {
                     </li>
                   </AboutTechsList>
                 </AboutTechs>
+                <p style={{ textAlign: "center" }}>
+                  <a href="https://status.acikkuran.com" target="_blank">
+                    <img
+                      src="https://status.acikkuran.com/api/badge/3/status"
+                      alt="Açık Kuran Status"
+                    />
+                  </a>
+                </p>
               </Col>
             </Row>
           </Container>
