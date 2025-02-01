@@ -106,6 +106,7 @@
     "settings__form__language_label": "Language",
     "settings__form__footnote_label": "Show Footnotes",
     "settings__form__surah_divider": "ON SURAH PAGE",
+    "settings__form__font_size": "Font Size Scaling",
     "settings__form__hide_arabic_label": "Hide Arabic Text",
     "settings__form__hide_transcription_label": "Hide Transcription",
     "settings__form__hide_translation_label": "Hide Translation",

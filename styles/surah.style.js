@@ -39,7 +39,7 @@ const SurahHero = styled.section`
     }
 
     ${SurahOriginal} {
-      font-size: 1.5em;
+      font-size: 2.5em;
       margin-bottom: 0;
       font-weight: 500;
       font-family: var(--font-mushaf);
@@ -53,8 +53,7 @@ const SurahHero = styled.section`
     ${SurahTranslation} {
       font-size: 1em;
       margin-bottom: 0;
-      font-weight: 400;
-      font-style: italic;
+      font-weight: 300;
     }
   `}
 `;
@@ -136,6 +135,15 @@ const SurahDetail = styled.section`
         }
       }
     }
+
+    ${SurahVerseTranslation}, ${SurahVerseTranscription} {
+      font-size: ${props => props.$fontSize || "1.1"}em;
+    }
+
+    ${SurahVerseArabic} {
+      font-size: ${props => props.$fontSize * 1.8 || "2"}em;
+    }
+
   `}
 `;
 
@@ -171,7 +179,6 @@ const SurahVerse = styled.div`
     ${SurahVerseArabic} {
       margin-top: 10px;
       font-family: var(--font-mushaf);
-      font-size: 2em;
       line-height: 1.5em;
       em {
         background-color: ${theme.helperBackground};
