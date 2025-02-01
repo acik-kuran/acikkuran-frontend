@@ -1,11 +1,8 @@
-import Link from "next/link";
-import Router from "next/router";
 import React from "react";
-import reactStringReplace from "react-string-replace";
 import { Tooltip } from "react-tippy";
 import styled from "styled-components";
 
-const nl2br = require("react-nl2br");
+import FootnoteFormatter from "./FootnoteFormatter";
 
 const FootnoteAsterix = styled.span`
   cursor: pointer;
@@ -32,36 +29,6 @@ const verseExpand = (props) => {
     value = value.replace(" :", ":");
     value = value.replace(" ;", ";");
     return value;
-  };
-
-  const textFormat = (value) => {
-    let newValue = reactStringReplace(
-      value,
-      /(\b\d+[:\/]\d+\b)/g,
-      (match, i) => {
-        const newMatch = match.replace(":", "/");
-        const part = newMatch.split("/");
-        return (
-          <Link
-            key={i}
-            href={`/[surah_id]/[verse_number]`}
-            as={`/${part[0]}/${part[1]}`}
-            style={{ fontWeight: "bold" }}
-            onClick={(e) => {
-              Router.push(`/${part[0]}/${part[1]}`);
-              e.preventDefault();
-              return false;
-            }}
-          >
-            {match.replace("/", ":")}
-          </Link>
-        );
-      }
-    );
-
-    newValue = nl2br(newValue);
-
-    return newValue;
   };
 
   return (
@@ -100,7 +67,7 @@ const verseExpand = (props) => {
                         maxHeight: 300,
                       }}
                     >
-                      {textFormat(footnote.text)}
+                      <FootnoteFormatter value={footnote.text} />
                     </div>
                   }
                   theme="light"
