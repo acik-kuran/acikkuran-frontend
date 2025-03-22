@@ -50,6 +50,7 @@ import { initGA, logEvent, logPageView } from "@utils/analytics";
 import { fetchJson, goToSurah, groupBy } from "@utils/funcs";
 import languageAlternates from "@utils/languageAlternates";
 import surahsData from "@utils/surahs";
+import customSelectFilter from "@utils/customSelectFilter";
 
 const Selectbox = dynamic(() => import("@components/common/Selectbox"), {
   ssr: false,
@@ -192,6 +193,7 @@ const Search = (props) => {
             onChange={(e) => goToSurah(e.value)}
             onChangeNative={(e) => goToSurah(e.target.value)}
             aria-label={t("selectbox__select_surah")}
+            filterOption={customSelectFilter}
           />
         </React.Fragment>
       </Navbar>

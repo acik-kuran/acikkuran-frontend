@@ -20,6 +20,7 @@ import {
 import { Content } from "@styles/global.style";
 import { goToSurah } from "@utils/funcs";
 import surahs from "@utils/surahs"; // TODO: her sey import etmek dosya boyutunu arttiriyor olabilir
+import customSelectFilter from "@utils/customSelectFilter";
 
 const Selectbox = dynamic(() => import("@components/common/Selectbox"), {
   ssr: false,
@@ -62,6 +63,7 @@ const ErrorComponent = () => {
             onChange={(e) => goToSurah(e.value)}
             onChangeNative={(e) => goToSurah(e.target.value)}
             aria-label={t("selectbox__select_surah")}
+            filterOption={customSelectFilter}
           />
         </React.Fragment>
       </Navbar>
