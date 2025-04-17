@@ -86,6 +86,7 @@ import localeVerseSlugs, {
 } from "@utils/localeVerseSlugs";
 import { PlayerContext } from "@utils/playerProvider";
 import surahs from "@utils/surahs";
+import customSelectFilter from "@utils/customSelectFilter";
 
 const KeyboardEventHandler = dynamic(
   () => import("react-keyboard-event-handler"),
@@ -447,6 +448,7 @@ const Verse = (props) => {
               onChange={(e) => goToSurah(e.value)}
               onChangeNative={(e) => goToSurah(e.target.value)}
               aria-label={t("selectbox__select_surah")}
+              filterOption={customSelectFilter}
             />
           )}
           <VerseNavigationButton

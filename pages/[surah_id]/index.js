@@ -77,6 +77,7 @@ import {
 import languageAlternates from "@utils/languageAlternates";
 import { PlayerContext } from "@utils/playerProvider";
 import surahs from "@utils/surahs";
+import customSelectFilter from "@utils/customSelectFilter";
 
 const Selectbox = dynamic(() => import("@components/common/Selectbox"), {
   ssr: false,
@@ -364,6 +365,7 @@ const Surah = (props) => {
               onChange={(e) => goToSurah(e.value)}
               onChangeNative={(e) => goToSurah(e.target.value)}
               aria-label={t("selectbox__select_surah")}
+              filterOption={customSelectFilter}
             />
             <SurahNavigationButton
               surah={surah}

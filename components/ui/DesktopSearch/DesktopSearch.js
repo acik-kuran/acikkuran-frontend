@@ -24,6 +24,7 @@ import rootchars from "@data/rootchars";
 import { envInfoState } from "@recoil/atoms";
 import theme from "@styles/theme";
 import { logEvent } from "@utils/analytics";
+import customSelectFilter from "@utils/customSelectFilter";
 import {
   getQuickRandom,
   getQuickSearch,
@@ -388,6 +389,7 @@ const desktopSearch = (props) => {
                     setShowSearch && setShowSearch(false);
                   }}
                   aria-label={t("selectbox__select_surah")}
+                  filterOption={customSelectFilter}
                 />
                 <Button
                   type="text"
