@@ -106,6 +106,7 @@
     "settings__form__language_label": "Dil Seçimi",
     "settings__form__footnote_label": "Dipnot Göster",
     "settings__form__surah_divider": "SURE SAYFASINDA",
+    "settings__form__font_size": "Yazı Boyutu Ölçeği",
     "settings__form__hide_arabic_label": "Arapça Gizle",
     "settings__form__hide_transcription_label": "Okunuş Gizle",
     "settings__form__hide_translation_label": "Çeviri Gizle",

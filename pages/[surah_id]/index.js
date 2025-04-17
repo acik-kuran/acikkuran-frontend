@@ -387,7 +387,7 @@ const Surah = (props) => {
         )}
       </Navbar>
       <Content>
-        <SurahDetail>
+        <SurahDetail $fontSize={userSettings.fs}>
           <Container>
             <Row>
               <Col sm={12}>
